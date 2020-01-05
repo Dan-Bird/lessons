@@ -1,10 +1,8 @@
 import React from 'react';
 
 const Square = props => {
-  console.log('win called');
-
   return (
-    <button className="square" onClick={props.onClick}>
+    <button data-testid="square" className="square" onClick={props.onClick}>
       {props.value}
     </button>
   );
